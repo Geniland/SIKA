@@ -446,13 +446,14 @@ strong {
 .navbar-nav{
   align-items: center;
   background-color: #44347a;
-  margin-left: -2.3%;
+  /* margin-left: -2.3%; */
   position: relative;
  
 }
 
 .navbar-na{
   align-items: center;
+  margin-right: -2.3%;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
