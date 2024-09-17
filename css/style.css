@@ -449,12 +449,12 @@ strong {
   background-color: #44347a;
   /* margin-left: -2.3%; */
   position: relative;
-  overflow: scroll;
+  
 }
 
 .navbar-na{
   align-items: center;
-  /* margin-right: -2.3%; */
+  margin-right: -2.3%;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
