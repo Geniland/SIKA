@@ -454,7 +454,7 @@ strong {
 
 .navbar-na{
   align-items: center;
-  margin-right: -2.3%;
+  /* margin-right: -2.3%; */
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
