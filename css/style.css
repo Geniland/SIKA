@@ -1351,11 +1351,11 @@ blockquote {
   }
 }
 
-
+/* 
 @media screen and (max-width: 1200px) {
   .navbar-na{
     align-items: center;
     margin-right: -2.8%;
   }
-}
+} */
 
