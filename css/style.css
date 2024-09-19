@@ -362,7 +362,7 @@ strong {
 
 .site-header-A_propos {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/A_propos.jpg);
-  padding-top: 150px;
+  padding-top: 400px;
   padding-bottom: 80px;
   background-position: cover;
   background-repeat: no-repeat;
@@ -371,7 +371,7 @@ strong {
 
 .site-header-service {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447)), url(../images/Eq/Eq1.jpeg);
-  padding-top: 150px;
+  padding-top: 400px;
   padding-bottom: 80px;
   background-position: center;
   background-repeat: no-repeat;
@@ -380,7 +380,7 @@ strong {
 
 .site-header-contact {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/Eq/Eq1.jpeg);
-  padding-top: 150px;
+  padding-top: 400px;
   padding-bottom: 80px;
   background-position: center;
   background-repeat: no-repeat;
@@ -389,7 +389,7 @@ strong {
 
 .site-header-competence {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/NOS-REALISATIONS.jpg);
-  padding-top: 150px;
+  padding-top: 400px;
   padding-bottom: 80px;
   background-position: center;
   background-repeat: no-repeat;
