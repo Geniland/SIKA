@@ -379,7 +379,7 @@ strong {
 }
 
 .site-header-contact {
-  background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/Eq/Eq1.jpeg);
+  background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/CONTACT.jpg);
   padding-top: 400px;
   padding-bottom: 80px;
   background-position: center;
@@ -389,6 +389,15 @@ strong {
 
 .site-header-competence {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/NOS-REALISATIONS.jpg);
+  padding-top: 400px;
+  padding-bottom: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-header-actualite {
+  background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/ACTUALITES.jpg);
   padding-top: 400px;
   padding-bottom: 80px;
   background-position: center;
