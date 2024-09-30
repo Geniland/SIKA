@@ -757,15 +757,15 @@ strong {
   }
   33% {
       background-image: url('../images/Eq/Eq14.jpg');
-      background-position: 0 center; /* À la position normale */
+      background-position: 0 cover; /* À la position normale */
   }
   66% {
       background-image: url('../images/ACTUALITES.jpg');
-      background-position: 50% center; /* Sortir à droite */
+      background-position: 50% cover; /* Sortir à droite */
   }
   100% {
       background-image: url('../images/Eq/Eq14.jpg');
-      background-position: 100% center; /* Retour à la position de départ à gauche */
+      background-position: 100% cover; /* Retour à la position de départ à gauche */
   }
 }
 
