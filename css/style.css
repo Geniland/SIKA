@@ -737,6 +737,7 @@ strong {
   position: relative;
   overflow: hidden;
   padding-top: 80px;
+  margin-top: -10px;
   padding-bottom: 55px;
   font-weight: 300;
   height: 100vh; /* Ajustez la hauteur selon vos besoins */
