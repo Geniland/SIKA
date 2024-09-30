@@ -408,6 +408,7 @@ strong {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/A_propos.jpg);
   padding-top: 400px;
   padding-bottom: 80px;
+  margin-top: -10px;
   background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -416,6 +417,7 @@ strong {
 .site-header-service {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447)), url(../images/Eq/Eq1.jpeg);
   padding-top: 400px;
+  margin-top: -10px;
   padding-bottom: 80px;
   background-position: center;
   background-repeat: no-repeat;
@@ -426,6 +428,7 @@ strong {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/CONTACT.jpg);
   padding-top: 400px;
   padding-bottom: 80px;
+  margin-top: -10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -435,6 +438,7 @@ strong {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/NOS-REALISATIONS.jpg);
   padding-top: 400px;
   padding-bottom: 80px;
+  margin-top: -10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -444,6 +448,7 @@ strong {
   background: linear-gradient(15deg, rgba(84, 50, 50, 0.322),rgba(46, 31, 90, 0.447) ), url(../images/ACTUALITES.jpg);
   padding-top: 400px;
   padding-bottom: 80px;
+  margin-top: -10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
