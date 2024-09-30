@@ -756,7 +756,7 @@ strong {
       background-position: 100% center; /* Commencer à l'extérieur à gauche */
   }
   33% {
-      background-image: url('../images/Eq/Eq14.jpg');
+      background-image: url('../images/Banniere1.jpg');
       background-position: 0 cover; /* À la position normale */
   }
   66% {
@@ -764,7 +764,7 @@ strong {
       background-position: 50% cover; /* Sortir à droite */
   }
   100% {
-      background-image: url('../images/Eq/Eq14.jpg');
+      background-image: url('../images/Banniere_5.jpg');
       background-position: 100% cover; /* Retour à la position de départ à gauche */
   }
 }
