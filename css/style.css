@@ -727,6 +727,7 @@ strong {
 
 
 
+
 .hero-section {
   position: relative;
   overflow: hidden;
@@ -741,7 +742,7 @@ strong {
   0% {
       background-image: url('../images/Eq/Eq14.jpg');
       background-size: center;
-      background-position: -100% center; /* Commencer à l'extérieur à gauche */
+      background-position: 100% center; /* Commencer à l'extérieur à gauche */
   }
   33% {
       background-image: url('../images/Eq/Eq14.jpg');
@@ -749,11 +750,11 @@ strong {
   }
   66% {
       background-image: url('../images/ACTUALITES.jpg');
-      background-position: 100% center; /* Sortir à droite */
+      background-position: 50% center; /* Sortir à droite */
   }
   100% {
       background-image: url('../images/Eq/Eq14.jpg');
-      background-position: -100% center; /* Retour à la position de départ à gauche */
+      background-position: 100% center; /* Retour à la position de départ à gauche */
   }
 }
 
