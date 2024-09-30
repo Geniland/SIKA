@@ -24,6 +24,9 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
         .gallery-item {
             margin-bottom: 30px;
@@ -52,38 +55,43 @@
             margin: 0;
             background-color: #f8f9fa;
         }
+
+        .gallery-item {
+    position: relative; /* Position relative pour le titre */
+    overflow: hidden; /* Cacher le débordement */
+    margin: 15px 0; /* Espacement vertical entre les éléments */
+    transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.gallery-item img {
+    transition: transform 0.5s ease; /* Effet de zoom sur l'image */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom lors du survol */
+}
+
+.gallery-item h3 {
+    position: absolute; /* Positionnement absolu du titre */
+    bottom: 0; /* Aligner le titre en bas */
+    left: 0; /* Aligner le titre à gauche */
+    right: 0; /* Étirer le titre à droite */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: #fff; /* Couleur du texte */
+    padding: 10px; /* Espacement interne */
+    margin: 0; /* Suppression de la marge */
+    transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.gallery-item:hover h3 {
+    background-color: rgba(0, 0, 0, 0.7); /* Changer la couleur de fond lors du survol */
+}
+
     </style>
-    <style>
-        /* Partner band styles */
-        .partner-band {
-          background-color: #f7f7f7; /* Light gray background */
-          padding: 20px;
-          text-align: center;
-        }
+
     
-        /* Partner logos list styles */
-        .partner-logos {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
     
-        /* Partner logo item styles */
-        .partner-logos li {
-          margin: 10px;
-        }
-    
-        /* Partner logo image styles */
-        .partner-logos img {
-          width: 100px; /* Adjust the width to your liking */
-          height: auto;
-          border-radius: 5px; /* Add a slight border radius */
-          margin: 10px;
-        }
-      </style>
 </head>
 <body class="topics-listing-page" id="top">
 
@@ -135,10 +143,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-12">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                        </ol>
-                    </nav>
+                   
 
                     <h2 class="text-white">Nos Réalisations</h2>
                 </div>
@@ -147,72 +152,73 @@
     </header>
 
     <!-- Galerie d'Images -->
-    <section class="container my-5">
-        <h3 class="text-center mb-4">Galerie d'Images</h3>
-        <div class="row text-center text-lg-start">
-            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
-                <div class="gallery-item">
-                    <img class="img-fluid" src="images/realisation/IMG1.jpg" alt="Image 1">
-                    <h3>Réalisation</h3>
-                </div>
+<section class="container my-5">
+    <h3 class="text-center mb-4">Galerie d'Images</h3>
+    <div class="row text-center text-lg-start">
+        <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
+            <div class="gallery-item">
+                <img class="img-fluid" src="images/realisation/IMG1.jpg" alt="Image 1">
+                <h3>Réalisation</h3>
             </div>
-            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
-                <div class="gallery-item">
-                    <img class="img-fluid" src="images/realisation/IMG5.jpg" alt="Image 2">
-                    <h3>Réalisation</h3>
-                </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
+            <div class="gallery-item">
+                <img class="img-fluid" src="images/realisation/IMG5.jpg" alt="Image 2">
+                <h3>Réalisation</h3>
             </div>
-            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
-                <div class="gallery-item">
-                    <img class="img-fluid" src="images/realisation/IMG3.jpg" alt="Image 3">
-                    <h3>Réalisation</h3>
-                </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
+            <div class="gallery-item">
+                <img class="img-fluid" src="images/realisation/IMG3.jpg" alt="Image 3">
+                <h3>Réalisation</h3>
             </div>
-            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
-                <div class="gallery-item">
-                    <img class="img-fluid" src="images/realisation/IMG4.jpg" alt="Image 4">
-                    <h3>Réalisation</h3>
-                </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
+            <div class="gallery-item">
+                <img class="img-fluid" src="images/realisation/IMG4.jpg" alt="Image 4">
+                <h3>Réalisation</h3>
             </div>
+        </div>
+    </div>
+    <div class="row text-center text-lg-start">
+        <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
+            <div class="gallery-item">
+                <img class="img-fluid" src="images/realisation/IMG2.jpg" alt="Image 5">
+                <h3>Réalisation</h3>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
+            <div class="gallery-item">
+                <img class="img-fluid" src="images/realisation/IMG6.jpg" alt="Image 6">
+                <h3>Réalisation</h3>
+            </div>
+        </div>
+    </div>
+</section>
 
-        </div>
-        <div class="row text-center text-lg-start">
-            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
-                <div class="gallery-item">
-                    <img class="img-fluid" src="images/realisation/IMG2.jpg" alt="Image 1">
-                    <h3>Réalisation</h3>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 d-flex align-items-stretch">
-                <div class="gallery-item">
-                    <img class="img-fluid" src="images/realisation/IMG6.jpg" alt="Image 2">
-                    <h3>Réalisation</h3>
-                </div>
-            </div>
-            
-        </div>
-    </section>
 
       <!-- Partner band container -->
   <div class="partner-band">
-    <!-- Partner logos will be listed here -->
     <h3 class="text-center mb-4">Nos Partenaires</h3>
-    <ul class="partner-logos list-inline">
-      <li class="list-inline-item"><img src="images/partenaires/LOGO1.jpg" alt="Partner 1 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO2.jpg" alt="Partner 2 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO3.png" alt="Partner 3 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO4.png" alt="Partner 4 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO5.png" alt="Partner 5 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO6.jpg" alt="Partner 6 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO7.jpg" alt="Partner 7 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO13.jpg" alt="Partner 8 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO8.jpg" alt="Partner 9 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO9.jpg" alt="Partner 10 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO10.jpg" alt="Partner 10 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO11.jpg" alt="Partner 11 Logo"></li>
-      <li class="list-inline-item"><img src="images/partenaires/LOGO12.jpg" alt="Partner 11 Logo"></li>
-    </ul>
-  </div>
+    <div class="partner-logos-container">
+        <ul class="partner-logos list-inline">
+            <li class="list-inline-item" ><img src="images/partenaires/LOGO1.jpg" alt="Partner 1 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO2.jpg" alt="Partner 2 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO3.png" alt="Partner 3 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO4.png" alt="Partner 4 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO5.png" alt="Partner 5 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO6.jpg" alt="Partner 6 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO7.jpg" alt="Partner 7 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO8.jpg" alt="Partner 8 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO9.jpg" alt="Partner 9 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO10.jpg" alt="Partner 10 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO11.jpg" alt="Partner 11 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO12.jpg" alt="Partner 12 Logo"></li>
+            <li class="list-inline-item"><img src="images/partenaires/LOGO13.jpg" alt="Partner 12 Logo"></li>
+        </ul>
+    </div>
+</div>
+
 
 </main>
 

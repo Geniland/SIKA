@@ -165,6 +165,50 @@ strong {
 }
 
 
+
+.partner-band {
+    position: relative;
+    overflow: hidden; /* Cacher le débordement */
+    padding: 20px 0; /* Espacement vertical */
+    background-color: #cecfcfae; /* Optionnel : Couleur de fond */
+}
+
+.partner-logos-container {
+    white-space: nowrap; /* Empêcher le retour à la ligne */
+    animation: scroll 30s linear infinite; /* Animation de défilement */
+}
+
+.partner-logos {
+    display: inline-flex; /* Afficher les éléments en ligne */
+    padding: 0; /* Supprimer le padding par défaut */
+    margin: 0; /* Supprimer la marge par défaut */
+    
+}
+
+.partner-logos li {
+    display: inline; /* Afficher les logos en ligne */
+    margin: 0 20px; /* Espacement entre les logos */
+    
+}
+
+.partner-logos img {
+    width: 150px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Conserve le ratio de l'image */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Commencer à droite hors de la vue */
+    }
+    100% {
+        transform: translateX(-100%); /* Défilement vers la gauche hors de la vue */
+    }
+}
+
+
+  
+
+
 /*** Section Title ***/
 .section-title {
   position: relative;
@@ -670,18 +714,62 @@ strong {
   
 }
 
+.TextReduction{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.reduisez{
+  text-decoration: underline;
+  text-decoration-color: #e4322b;
+}
+
+
+
+
+
 .hero-section {
-  
-  /* background-image: linear-gradient(15deg, #574479 0%, #447979 100%); */
-  background-image:url('../images/Banniere1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   overflow: hidden;
-  padding-top: 300px;
+  padding-top: 200px;
   padding-bottom: 75px;
+  font-weight: 300;
+  height: 100vh; /* Ajustez la hauteur selon vos besoins */
+  animation: backgroundSlide 30s linear infinite; /* Animation continue */
 }
+
+@keyframes backgroundSlide {
+  0% {
+      background-image: url('../images/Eq/Eq14.jpg');
+      background-size: center;
+      background-position: -100% center; /* Commencer à l'extérieur à gauche */
+  }
+  33% {
+      background-image: url('../images/Eq/Eq14.jpg');
+      background-position: 0 center; /* À la position normale */
+  }
+  66% {
+      background-image: url('../images/ACTUALITES.jpg');
+      background-position: 100% center; /* Sortir à droite */
+  }
+  100% {
+      background-image: url('../images/Eq/Eq14.jpg');
+      background-position: -100% center; /* Retour à la position de départ à gauche */
+  }
+}
+
+.TextAccueil {
+  position: relative; /* Position relative pour superposer le texte sur l'arrière-plan */
+  z-index: 1; /* Assurez-vous que le texte est au-dessus de l'arrière-plan */
+}
+
+
+
+
+
+
+
+
+
 
 .hero-section-seconde {
   
