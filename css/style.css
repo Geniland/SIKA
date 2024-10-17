@@ -164,48 +164,73 @@ strong {
   padding-top: 30%;
 }
 
-
-
-.partner-band {
-    position: relative;
-    overflow: hidden; /* Cacher le débordement */
-    padding: 20px 0; /* Espacement vertical */
-    background-color: #cecfcfae; /* Optionnel : Couleur de fond */
+.bgcolo{
+  background-color: #44347a;
+  color: #44347a;
 }
 
-.partner-logos-container {
-    white-space: nowrap; /* Empêcher le retour à la ligne */
-    animation: scroll 30s linear infinite; /* Animation de défilement */
+.bgcolo:hover{
+  background-color: #44347a;
+  
 }
 
-.partner-logos {
-    display: inline-flex; /* Afficher les éléments en ligne */
-    padding: 0; /* Supprimer le padding par défaut */
-    margin: 0; /* Supprimer la marge par défaut */
-    
+
+.partner-section {
+  display: flex;
+  overflow: hidden; /* Cache les logos en dehors du conteneur */
+  align-items: center;
 }
 
-.partner-logos li {
-    display: inline; /* Afficher les logos en ligne */
-    margin: 0 20px; /* Espacement entre les logos */
-    
+.partner-carousel {
+  display: flex;
+  animation: scroll 240s linear infinite; /* Animation de défilement */
 }
 
-.partner-logos img {
-    width: 150px; /* Ajustez la largeur selon vos besoins */
-    height: auto; /* Conserve le ratio de l'image */
+.partner-card {
+  flex: 0 0 auto; /* Empêche les éléments de se redimensionner */
+  width: 150px;
+  margin-right: 20px;
 }
 
+.partner-logo {
+  width: 100%;
+  height: auto;
+}
+
+/* Animation CSS pour le défilement */
 @keyframes scroll {
-    0% {
-        transform: translateX(100%); /* Commencer à droite hors de la vue */
-    }
-    100% {
-        transform: translateX(-100%); /* Défilement vers la gauche hors de la vue */
-    }
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
 
 
+/*** Realisation Start ***/
+.event .tab-class .nav-item a.active {
+  background: rgb(30, 210, 54) !important;
+  
+}
+
+.event .event-img .event-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(212, 167, 98, 0.7);
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.event .event-img:hover .event-overlay {
+  opacity: 1;
+}
+/*** Realisation End ***/
   
 
 
@@ -753,19 +778,19 @@ strong {
   0% {
       background-image: url('../images/Eq/Eq14.jpg');
       background-size: center;
-      background-position: 100% center; /* Commencer à l'extérieur à gauche */
+      background-position:center; /* Commencer à l'extérieur à gauche */
   }
   33% {
       background-image: url('../images/Banniere1.jpg');
-      background-position: 0 cover; /* À la position normale */
+      background-position:cover; /* À la position normale */
   }
   66% {
       background-image: url('../images/ACTUALITES.jpg');
-      background-position: 50% cover; /* Sortir à droite */
+      background-position:cover; /* Sortir à droite */
   }
   100% {
       background-image: url('../images/Banniere_5.jpg');
-      background-position: 100% cover; /* Retour à la position de départ à gauche */
+      background-position: cover; /* Retour à la position de départ à gauche */
   }
 }
 
