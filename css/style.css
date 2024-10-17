@@ -739,6 +739,10 @@ strong {
   opacity: 0.5;
 } */
 
+.TextBg{
+  margin-top: -15%;
+}
+
 .TextAccueil{
   padding-top: 20%;
   
@@ -748,6 +752,7 @@ strong {
   
   font-family: sans-serif;
   font-weight: 900;
+  margin-top: -60%;
   /* font-family: Arial, Helvetica, sans-serif; */
   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
@@ -763,36 +768,57 @@ strong {
 
 
 
+
+
+
+
+/* Taille de la section */
 .hero-section {
   position: relative;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
-  padding-top: 80px;
-  margin-top: -10px;
-  padding-bottom: 55px;
-  font-weight: 300;
-  height: 100vh; /* Ajustez la hauteur selon vos besoins */
-  animation: backgroundSlide 30s linear infinite; /* Animation continue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin-top: -2%;
 }
 
-@keyframes backgroundSlide {
-  0% {
-      background-image: url('../images/Eq/Eq14.jpg');
-      background-size: center;
-      background-position:center; /* Commencer à l'extérieur à gauche */
-  }
-  33% {
-      background-image: url('../images/Banniere1.jpg');
-      background-position:cover; /* À la position normale */
-  }
-  66% {
-      background-image: url('../images/ACTUALITES.jpg');
-      background-position:cover; /* Sortir à droite */
-  }
-  100% {
-      background-image: url('../images/Banniere_5.jpg');
-      background-position: cover; /* Retour à la position de départ à gauche */
-  }
+/* Styles pour l'effet de fond défilant */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 15s infinite;
+  z-index: -1;
 }
+
+/* Images du fond défilant */
+@keyframes slideshow {
+  0% { background-image: url('../images/Eq/Eq14.jpg');}
+  25% { background-image: url('../images/Banniere1.jpg'); }
+  50% { background-image: url('../images/ACTUALITES.jpg'); }
+  75% { background-image: url('../images/Banniere_5.jpg'); }
+  100% { background-image: url('../images/Banniere_5.jpg'); }
+}
+
+
+
+/* Pour le texte */
+.TextAccueil h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
 
 .TextAccueil {
   position: relative; /* Position relative pour superposer le texte sur l'arrière-plan */
@@ -800,8 +826,14 @@ strong {
 }
 
 
+.bagImg{
+  margin-top: -2%;
+}
 
-
+.bagImgs{
+  margin-top: 100%;
+  
+}
 
 
 
@@ -1371,6 +1403,16 @@ blockquote {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
+
+  .TextReduction{
+  
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-top: -100%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  }
   h1 {
     font-size: 48px;
   }
