@@ -752,7 +752,7 @@ strong {
   
   font-family: sans-serif;
   font-weight: 900;
-  margin-top: -60%;
+  margin-top: -80%;
   /* font-family: Arial, Helvetica, sans-serif; */
   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
@@ -1408,11 +1408,16 @@ blockquote {
   
     font-family: sans-serif;
     font-weight: 900;
-    margin-top: -100%;
+   
     /* font-family: Arial, Helvetica, sans-serif; */
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   }
+
+  .TextAccuel{
+    margin-bottom: 100%;
+  }
+
   h1 {
     font-size: 48px;
   }
